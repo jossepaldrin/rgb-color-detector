@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RGB Color Detector</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>RGB Color Detector</h1>
+    <p class="subtitle">Click anywhere on your webcam feed to sample the color under your cursor — runs entirely in your browser.</p>
+
+    <div id="banner" class="banner ok">Click "Start Camera" to begin</div>
+
+    <div class="video-wrap">
+      <video id="video" autoplay playsinline muted class="hidden"></video>
+      <canvas id="canvas"></canvas>
+    </div>
+
+    <button id="startBtn">Start Camera</button>
+
+    <div id="resultCard" class="result-card hidden">
+      <div id="swatch" class="swatch"></div>
+      <div class="result-text">
+        <div id="colorName" class="color-name">--</div>
+        <div id="colorValues" class="color-values">--</div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
